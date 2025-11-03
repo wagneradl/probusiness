@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint Executivo - SEBRAE Pró Business 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .alert {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .alert-danger {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+        
+        .alert-success {
+            background: #d1e7dd;
+            border-left-color: #198754;
+        }
+        
+        h2 {
+            color: #0066cc;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #0066cc;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #004999;
+            margin: 30px 0 15px 0;
+            font-size: 1.4em;
+        }
+        
+        h4 {
+            color: #333;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+        }
+        
+        .flow-diagram {
+            background: #f0f7ff;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.8;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-width: 100%;
+        }
+        
+        .card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .card-header {
+            font-weight: bold;
+            color: #0066cc;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .printable-box {
+            border: 3px dashed #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f8f9fa;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .printable-box pre {
+            margin: 15px 0;
+            white-space: pre-wrap;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background: #0066cc;
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .timeline {
+            margin: 20px 0;
+        }
+        
+        .timeline-item {
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #0066cc;
+            background: #f8f9fa;
+        }
+        
+        .timeline-item.urgent {
+            border-left-color: #dc3545;
+            background: #fff5f5;
+        }
+        
+        .timeline-item.done {
+            border-left-color: #28a745;
+            background: #f0fff0;
+        }
+        
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .checklist li {
+            padding: 10px;
+            margin: 5px 0;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        
+        .checklist li:before {
+            content: "☐ ";
+            font-size: 1.2em;
+            margin-right: 10px;
+            color: #0066cc;
+        }
+        
+        .budget-total {
+            background: #0066cc;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .tech-item {
+            background: #f0f7ff;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .emoji {
+            font-size: 1.3em;
+            margin-right: 8px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 BLUEPRINT EXECUTIVO FINAL</h1>
+            <div class="subtitle">SEBRAE Pró Business 2025 | Stand SMN</div>
+            <div style="margin-top: 15px; font-size: 0.9em;">
+                <strong>Evento:</strong> 12-13/11/2025 | 18h-22h<br>
+                <strong>Local:</strong> Teatro Pedra do Reino - João Pessoa/PB<br>
+                <strong>Stand:</strong> Entrada (alta visibilidade)
+            </div>
+        </div>
+
+        <div class="alert alert-danger">
+            <strong>⚠️ DECISÃO CRÍTICA:</strong> Este documento precisa ser aprovado HOJE (03/11) até 20h. Após esse horário, inviabiliza execução com qualidade.
+        </div>
+
+        <h2>📊 RESUMO EXECUTIVO</h2>
+        <div class="card">
+            <div class="card-header">Missão do Stand</div>
+            <p><strong>"Ser o stand mais inovador e fotografado do SEBRAE, posicionando SMN como referência em transformação digital"</strong></p>
+            
+            <h4 style="margin-top: 20px;">Conexão das 3 Marcas:</h4>
+            <p><em>"A SMN constrói o futuro: forma pessoas (IFTI), desenvolve sistemas (GCPro) e transforma empresas através de tecnologia de missão crítica."</em></p>
+            
+            <h4 style="margin-top: 20px;">Objetivos Primários:</h4>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>BUZZ:</strong> Stand mais comentado/fotografado</li>
+                <li><strong>POSICIONAMENTO:</strong> SMN = inovação (mensagem clara)</li>
+                <li><strong>LEADS:</strong> 200+ empresários com dados completos</li>
+                <li><strong>NETWORKING:</strong> 5+ reuniões agendadas com decisores</li>
+            </ul>
+        </div>
+
+        <h2>🗺️ ARQUITETURA DE JORNADAS</h2>
+        <div class="flow-diagram">
+PRÉ-EVENTO (09-11/11)
+    │
+    ├─ Instagram: Posts teaser
+    ├─ LinkedIn: Posts convite
+    └─ Stories: Bastidores
+    
+DURANTE EVENTO (12-13/11) - DAS 18H ÀS 22H
+    │
+    ├─ CANAL A: Instagram "Qual Seu Arquétipo?"
+    │   │
+    │   ├─ Promotoras distribuem CARDS com QR
+    │   ├─ QR abre Instagram DM
+    │   ├─ Quiz 5 perguntas (60s)
+    │   ├─ Resultado: 4 arquétipos possíveis
+    │   ├─ Badge personalizado + brinde digital
+    │   ├─ 3 números da sorte (#IG-timestamp)
+    │   └─ CTA: "Vem no stand!"
+    │
+    └─ CANAL B: Totem Físico "Termômetro Digital"
+        │
+        ├─ 2 totens touch Windows (alugados)
+        ├─ Web app: quiz.smn.tec (Vercel)
+        ├─ Quiz empresarial 5 perguntas
+        ├─ Resultado + score de maturidade
+        ├─ QR Code → brinde digital correto
+        ├─ 3 números da sorte (#WEB-timestamp)
+        └─ Direciona às estações
+        
+ESTAÇÕES NO STAND (3)
+    │
+    ├─ IFTI: "Trilha de Desenvolvimento"
+    │   ├─ TV com vídeo salários TI
+    │   ├─ Tablet: ifti.org.br/cadastro
+    │   └─ +2 números sorte (#IFTI)
+    │
+    ├─ GCPro: "Calculadora de Perdas"
+    │   ├─ TV com vídeo "Antes x Depois"
+    │   ├─ QR → gcpro.com.br/diagnostico
+    │   └─ +2 números sorte (#GCPRO)
+    │
+    └─ SMN: "Lounge + Agendamento VIP"
+        ├─ Sofá + mesa
+        ├─ Tablet: smn.tec/agendar (Calendly)
+        ├─ Atendimento personalizado Ricardo/Wagner
+        └─ +2 números sorte (#MEET)
+        
+SORTEIO ALEXA
+    │
+    ├─ 21h45 cada dia (ao vivo no Instagram)
+    ├─ Planilha única Google Sheets
+    ├─ Máximo 12 números por pessoa
+    └─ Entrega presencial ou contato posterior
+
+PÓS-EVENTO (14/11+)
+    │
+    ├─ WhatsApp: Mensagem agradecimento
+    ├─ E-mail: Webinar exclusivo convite
+    └─ LinkedIn: Conexões + follow-up comercial
+        </div>
+
+        <h2>📱 CANAL A: INSTAGRAM - "QUAL SEU ARQUÉTIPO DE INOVADOR?"</h2>
+
+        <h3>Pré-Evento (09-11/11)</h3>
+        <div class="card">
+            <h4>Post 1 - Sexta 08/11 às 18h</h4>
+            <p><strong>Formato:</strong> Carrossel 3 imagens (detalhes stand em construção)</p>
+            <p><strong>Copy:</strong></p>
+            <pre style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+Algo grande vem aí no SEBRAE Pró Business... 👀
+
+12 e 13 de novembro. Stand na entrada.
+3 marcas. 1 ecossistema de transformação.
+
+Tá preparado?
+
+#SEBRAE #Inovação #Tecnologia</pre>
+
+            <h4 style="margin-top: 20px;">Post 2 - Domingo 10/11 às 19h</h4>
+            <p><strong>Formato:</strong> Vídeo 15s (timelapse montagem)</p>
+            <p><strong>Copy:</strong></p>
+            <pre style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+AMANHÃ TEM! 🚀
+
+Stand SMN | GCPro | IFTI
+📍 Teatro Pedra do Reino - Entrada
+🕐 18h às 22h (12 e 13/11)
+
+Te esperamos pra mostrar que transformação 
+digital não é futuro - é AGORA.
+
+E sim, tem sorteio de Alexa. 😏</pre>
+
+            <h4 style="margin-top: 20px;">Stories 11/11</h4>
+            <ul style="margin-left: 20px;">
+                <li>Contagem regressiva (24h, 12h, 6h, 3h, 1h)</li>
+                <li>Bastidores da equipe se preparando</li>
+                <li>Preview das estações (sem revelar tudo)</li>
+                <li>"Amanhã você descobre que tipo de inovador você é"</li>
+            </ul>
+        </div>
+
+        <h3>Durante Evento (12-13/11)</h3>
+        
+        <h4>Material Impresso: CARDS PREMIUM</h4>
+        <div class="printable-box">
+            <strong>ESPECIFICAÇÕES TÉCNICAS</strong>
+            <pre>
+Quantidade: 500 unidades
+Tamanho: 9x5cm (formato cartão de visita largo)
+Material: Papel Supremo 300g
+Impressão: 4x4 cores (frente e verso)
+Acabamento: Verniz localizado UV no QR Code
+Prazo entrega: 11/11 até 12h
+            </pre>
+            
+            <div style="border: 2px solid #0066cc; padding: 20px; margin: 20px auto; max-width: 400px; background: white;">
+                <strong>FRENTE DO CARD</strong>
+                <pre style="text-align: left; margin-top: 15px;">
+┌─────────────────────────────┐
+│                             │
+│      [Logo SMN clean]       │
+│                             │
+│   QUAL SEU ARQUÉTIPO        │
+│     DE INOVADOR?            │
+│                             │
+│   ┌─────────────────┐       │
+│   │                 │       │
+│   │   [QR CODE]     │       │
+│   │     4x4cm       │       │
+│   │                 │       │
+│   └─────────────────┘       │
+│                             │
+│  Descubra em 60 segundos    │
+│  + Concorra a 1 Alexa       │
+│                             │
+│      @smn.tec               │
+│                             │
+└─────────────────────────────┘
+                </pre>
+            </div>
+            
+            <div style="border: 2px solid #0066cc; padding: 20px; margin: 20px auto; max-width: 400px; background: white;">
+                <strong>VERSO DO CARD</strong>
+                <pre style="text-align: left; margin-top: 15px;">
+┌─────────────────────────────┐
+│                             │
+│   Visite nosso stand!       │
+│   Logo na entrada →         │
+│                             │
+│  SMN  |  GCPro  |  IFTI     │
+│                             │
+│  Tecnologia que forma       │
+│  Propósito que transforma   │
+│                             │
+│  smn.tec                    │
+│                             │
+└─────────────────────────────┘
+                </pre>
+            </div>
+            
+            <p style="margin-top: 20px;"><strong>QR Code leva para:</strong> <code>ig.smn.tec/arquetipo</code> (redireciona DM Instagram)</p>
+        </div>
+
+        <h4>Script das Promotoras</h4>
+        <div class="card">
+            <p><strong>Abordagem principal:</strong></p>
+            <p style="background: #f0f7ff; padding: 15px; border-radius: 4px; margin: 10px 0;">
+                <em>"Oi! Quer descobrir que tipo de inovador você é? É rapidinho - 60 segundos, você ganha um resultado personalizado e concorre a uma Alexa hoje à noite! É só escanear esse QR aqui no seu Instagram."</em>
+            </p>
+            
+            <p><strong>Se perguntarem "o que é":</strong></p>
+            <p style="background: #f0f7ff; padding: 15px; border-radius: 4px; margin: 10px 0;">
+                <em>"É um teste divertido sobre seu estilo de liderança e inovação. No final você descobre se é mais visionário, estrategista, executor ou analista. Todo mundo tá fazendo!"</em>
+            </p>
+            
+            <p><strong>Se não tiverem Instagram:</strong></p>
+            <p style="background: #f0f7ff; padding: 15px; border-radius: 4px; margin: 10px 0;">
+                <em>"Sem problema! Temos totens interativos lá no stand onde você pode fazer um teste da sua empresa. Vem lá!"</em>
+            </p>
+        </div>
+
+        <h4>Fluxo Manychat Completo</h4>
+        <div class="card">
+            <p><strong>Gatilho:</strong> Usuário escaneia QR ou envia "ARQUETIPO" no DM</p>
+            
+            <div style="background: #f8f9fa; padding: 15px; margin: 15px 0; border-left: 4px solid #0066cc;">
+                <strong>BOT RESPONDE:</strong><br><br>
+                🚀 Fala! Bem-vindo ao Stand SMN no SEBRAE!<br><br>
+                Vamos descobrir qual seu ARQUÉTIPO DE INOVADOR?<br><br>
+                São 5 perguntas sobre seu estilo pessoal de liderança.<br><br>
+                No final você ganha:<br>
+                ✓ Badge personalizado<br>
+                ✓ Números pra sorteio da Alexa (21h45)<br>
+                ✓ Dica de qual solução combina com você<br><br>
+                Bora?<br>
+                [Botão: COMEÇAR AGORA]
+            </div>
+            
+            <div style="background: #fff9e6; padding: 15px; margin: 15px 0; border-left: 4px solid #ffc107;">
+                <strong>COLETA DE DADOS:</strong><br><br>
+                1. "Primeiro, como você prefere ser chamado?" [texto livre]<br>
+                2. "E qual sua empresa?" [texto livre]<br>
+                3. "WhatsApp pra te enviar o resultado completo depois?" [telefone]<br><br>
+                <em>Dados salvos em Google Sheets via Zapier/Make</em>
+            </div>
+            
+            <h4 style="margin-top: 25px;">As 5 Perguntas</h4>
+            
+            <div style="background: #f0f7ff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <strong>PERGUNTA 1: "Quando você tem uma nova ideia..."</strong><br><br>
+                🎨 [A] Já imagino como vai mudar tudo → VISIONÁRIO<br>
+                📋 [B] Faço um plano detalhado primeiro → ESTRATEGISTA<br>
+                ⚡ [C] Parto pra ação na mesma hora → EXECUTOR<br>
+                📊 [D] Pesquiso dados antes de decidir → ANALISTA
+            </div>
+            
+            <div style="background: #f0f7ff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <strong>PERGUNTA 2: "Sua maior força como gestor é..."</strong><br><br>
+                🎨 [A] Ver oportunidades que ninguém vê<br>
+                📋 [B] Organizar tudo pra funcionar bem<br>
+                ⚡ [C] Fazer as coisas acontecerem rápido<br>
+                📊 [D] Tomar decisões baseadas em números
+            </div>
+            
+            <div style="background: #f0f7ff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <strong>PERGUNTA 3: "Em reuniões, você costuma..."</strong><br><br>
+                🎨 [A] Apresentar ideias ousadas<br>
+                📋 [B] Garantir que tá tudo alinhado<br>
+                ⚡ [C] Definir próximos passos práticos<br>
+                📊 [D] Questionar com dados
+            </div>
+            
+            <div style="background: #f0f7ff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <strong>PERGUNTA 4: "Seu maior desafio é..."</strong><br><br>
+                🎨 [A] Ter paciência com burocracia<br>
+                📋 [B] Lidar com imprevistos<br>
+                ⚡ [C] Parar pra planejar melhor<br>
+                📊 [D] Confiar na intuição às vezes
+            </div>
+            
+            <div style="background: #f0f7ff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <strong>PERGUNTA 5: "Se sua empresa fosse uma palavra seria..."</strong><br><br>
+                🎨 [A] Inovação<br>
+                📋 [B] Estrutura<br>
+                ⚡ [C] Agilidade<br>
+                📊 [D] Inteligência
+            </div>
+            
+            <h4 style="margin-top: 25px;">Os 4 Resultados Possíveis</h4>
+            
+            <div style="background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%); padding: 20px; margin: 15px 0; border-radius: 8px; color: #333;">
+                <strong style="font-size: 1.3em;">🚀 O VISIONÁRIO</strong><br><br>
+                Você enxerga o futuro antes dos outros. Pensa grande, inspira pessoas e não tem medo de arriscar.<br><br>
+                [ENVIA BADGE PERSONALIZADO - imagem PNG]<br><br>
+                Seu desafio: Transformar visão em realidade.<br>
+                Solução pra você: SMN - Fábrica de Software de Missão Crítica<br><br>
+                🎟️ Seus números da sorte:<br>
+                #IG-[timestamp]-01<br>
+                #IG-[timestamp]-02<br>
+                #IG-[timestamp]-03<br><br>
+                Sorteio AO VIVO hoje 21h45 no nosso Stories!<br><br>
+                📍 Vem no stand (tá logo na entrada!) falar com a gente.<br><br>
+                [Botão: QUERO CONHECER A SMN] → smn.tec/contato
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #4285f4 0%, #669df6 100%); padding: 20px; margin: 15px 0; border-radius: 8px; color: white;">
+                <strong style="font-size: 1.3em;">🎯 O ESTRATEGISTA</strong><br><br>
+                Você planeja, organiza e garante que tudo funcione como uma máquina bem oleada.<br><br>
+                [ENVIA BADGE PERSONALIZADO]<br><br>
+                Seu desafio: Ter sistemas que acompanhem seu planejamento.<br>
+                Solução pra você: GCPro - ERP na palma da mão<br><br>
+                🎟️ Seus números da sorte:<br>
+                #IG-[timestamp]-01<br>
+                #IG-[timestamp]-02<br>
+                #IG-[timestamp]-03<br><br>
+                Sorteio hoje 21h45!<br><br>
+                📍 Passa no stand (entrada do evento) pra ver como colocar toda sua empresa no bolso.<br><br>
+                [Botão: VER O GCPRO] → gcpro.com.br/contato
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); padding: 20px; margin: 15px 0; border-radius: 8px; color: white;">
+                <strong style="font-size: 1.3em;">⚡ O EXECUTOR</strong><br><br>
+                Você faz as coisas acontecerem. Enquanto outros falam, você já tá construindo.<br><br>
+                [ENVIA BADGE PERSONALIZADO]<br><br>
+                Seu desafio: Escalar sem perder qualidade.<br>
+                Solução pra você: Todo nosso ecossistema SMN<br><br>
+                🎟️ Seus números da sorte:<br>
+                #IG-[timestamp]-01<br>
+                #IG-[timestamp]-02<br>
+                #IG-[timestamp]-03<br><br>
+                Sorteio 21h45!<br><br>
+                📍 Stand na entrada - vem ver como executores tão transformando o mercado.<br><br>
+                [Botão: QUERO ACELERAR] → smn.tec/contato
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #9c27b0 0%, #ba68c8 100%); padding: 20px; margin: 15px 0; border-radius: 8px; color: white;">
+                <strong style="font-size: 1.3em;">🧠 O ANALISTA</strong><br><br>
+                Você decide com dados, não com achismos. Sua empresa tem fundamento sólido.<br><br>
+                [ENVIA BADGE PERSONALIZADO]<br><br>
+                Seu desafio: Ter dados de qualidade em tempo real.<br>
+                Solução pra você: GCPro - Dashboard que fala a sua língua<br><br>
+                🎟️ Seus números da sorte:<br>
+                #IG-[timestamp]-01<br>
+                #IG-[timestamp]-02<br>
+                #IG-[timestamp]-03<br><br>
+                Sorteio 21h45!<br><br>
+                📍 Vem no stand (entrada) ver métricas que importam de verdade.<br><br>
+                [Botão: MOSTREM OS DADOS] → gcpro.com.br/diagnostico
+            </div>
+            
+            <div style="background: #e8f5e9; padding: 15px; margin: 15px 0; border-left: 4px solid #4caf50;">
+                <strong>MENSAGEM FINAL (todos):</strong><br><br>
+                "Ah! E se quiser fazer o teste da sua EMPRESA também (é outro, diferente desse), passa no nosso stand - temos totens interativos lá 😉"
+            </div>
+        </div>
+
+        <h2>🖥️ CANAL B: TOTEM FÍSICO - "TERMÔMETRO DIGITAL"</h2>
+
+        <h3>Estrutura Física</h3>
+        <div class="card">
+            <h4>Totems Touchscreen (Aluguel)</h4>
+            <ul style="margin-left: 20px;">
+                <li><strong>Quantidade:</strong> 2 unidades</li>
+                <li><strong>Tipo:</strong> Totem grande com tela touch (Windows OS)</li>
+                <li><strong>Tela:</strong> 32" mínimo, orientação vertical</li>
+                <li><strong>Altura:</strong> 1,60-1,80m (ergonômico para interação em pé)</li>
+                <li><strong>Conexão:</strong> Wi-Fi + cabo ethernet (redundância)</li>
+                <li><strong>Browser:</strong> Chrome em fullscreen (kiosk mode)</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Posicionamento no Stand</h4>
+            <ul style="margin-left: 20px;">
+                <li><strong>Totem 1:</strong> Lado direito da entrada do stand (primeira interação)</li>
+                <li><strong>Totem 2:</strong> Próximo ao balcão/lounge SMN (quem já interagiu)</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Sinalização</h4>
+            <p><strong>Adesivo vinil recortado (50x30cm) colado na parte superior do totem:</strong></p>
+            <div class="printable-box">
+                <pre>
+  TESTE SUA EMPRESA
+    EM 60 SEGUNDOS
+         ↓
+    [TOQUE AQUI]
+                </pre>
+            </div>
+        </div>
+
+        <h3>Especificações Técnicas do Web App</h3>
+        <div class="tech-stack">
+            <div class="tech-item">
+                <strong>URL:</strong><br>
+                quiz.smn.tec
+            </div>
+            <div class="tech-item">
+                <strong>Hospedagem:</strong><br>
+                Vercel (deploy automático)
+            </div>
+            <div class="tech-item">
+                <strong>Stack:</strong><br>
+                HTML5 + CSS3 + Vanilla JS
+            </div>
+            <div class="tech-item">
+                <strong>Backend:</strong><br>
+                Google Sheets API ou Webhook
+            </div>
+            <div class="tech-item">
+                <strong>Modo:</strong><br>
+                Online obrigatório (IDs únicos)
+            </div>
+            <div class="tech-item">
+                <strong>Responsivo:</strong><br>
+                Otimizado para tela touch vertical
+            </div>
+        </div>
+
+        <div class="card">
+            <h4>Funcionalidades Críticas</h4>
+            <ul style="margin-left: 20px;">
+                <li><span class="emoji">✅</span> Sistema de IDs únicos (timestamp) para evitar conflito com Instagram</li>
+                <li><span class="emoji">✅</span> Salvamento em tempo real no Google Sheets (mesma planilha)</li>
+                <li><span class="emoji">✅</span> Geração de números da sorte com prefixo #WEB-</li>
+                <li><span class="emoji">✅</span> QR Code dinâmico no resultado (leva pro brinde digital correto)</li>
+                <li><span class="emoji">✅</span> Auto-reset após 15 segundos de inatividade</li>
+                <li><span class="emoji">✅</span> Timeout visual (barra de progresso) antes de resetar</li>
+                <li><span class="emoji">✅</span> Validação de campos (nome, empresa, WhatsApp obrigatórios)</li>
+                <li><span class="emoji">✅</span> Feedback visual em cada etapa (animações suaves)</li>
+            </ul>
+        </div>
+
+        <h3>Fluxo do Usuário no Totem</h3>
+        <div class="flow-diagram">
+[VISITANTE TOCA NA TELA]
+    ↓
+TELA 1: "Descubra o nível de inovação digital da sua empresa"
+    [Botão grande: COMEÇAR TESTE]
+    ↓
+TELA 2: "Qual seu nome?"
+    [Input campo grande + teclado virtual]
+    [Botão: PRÓXIMO]
+    ↓
+TELA 3: "Nome da sua empresa?"
+    [Input campo grande + teclado virtual]
+    [Botão: PRÓXIMO]
+    ↓
+TELA 4: "Seu WhatsApp?"
+    [Input com máscara (83) 9____-____]
+    [Botão: COMEÇAR PERGUNTAS]
+    ↓
+TELA 5: PERGUNTA 1/5
+    "Sua empresa usa algum sistema de gestão?"
+    
+    [Botão grande A] Sistema ERP integrado (20pts)
+    [Botão grande B] Planilhas + apps isolados (10pts)
+    [Botão grande C] Tudo manual/papel (0pts)
+    ↓
+TELA 6: PERGUNTA 2/5
+    "Como você acompanha seus resultados?"
+    
+    [Botão A] Dashboard em tempo real (20pts)
+    [Botão B] Relatórios semanais/mensais (10pts)
+    [Botão C] "Eu sei mais ou menos" (0pts)
+    ↓
+TELA 7: PERGUNTA 3/5
+    "Sua equipe trabalha de onde?"
+    
+    [Botão A] Híbrido/remoto com ferramentas cloud (20pts)
+    [Botão B] Presencial com alguns remotos (10pts)
+    [Botão C] Todo mundo presencial obrigatório (0pts)
+    ↓
+TELA 8: PERGUNTA 4/5
+    "Quanto do seu processo é automatizado?"
+    
+    [Botão A] Maior parte automatizada (20pts)
+    [Botão B] Algumas coisas (10pts)
+    [Botão C] Nada, tudo manual (0pts)
+    ↓
+TELA 9: PERGUNTA 5/5
+    "Você usa IA no seu negócio?"
+    
+    [Botão A] Sim, em várias áreas (20pts)
+    [Botão B] Só pra testar/estudar (10pts)
+    [Botão C] Nem sei por onde começar (0pts)
+    ↓
+[PROCESSAMENTO - ANIMAÇÃO 2 SEGUNDOS]
+    ↓
+TELA 10: RESULTADO
+
+    [Badge animado gigante aparecendo]
+    
+    SE 80-100 PONTOS:
+    ┌────────────────────────────────┐
+    │   🔥 NÍVEL: INOVADOR           │
+    │                                │
+    │   Sua empresa tá no caminho!   │
+    │   Score: [XX]/100              │
+    └────────────────────────────────┘
+    
+    SE 50-79 PONTOS:
+    ┌────────────────────────────────┐
+    │   ⚡ NÍVEL: EM EVOLUÇÃO        │
+    │                                │
+    │   Deu os primeiros passos!     │
+    │   Score: [XX]/100              │
+    └────────────────────────────────┘
+    
+    SE 0-49 PONTOS:
+    ┌────────────────────────────────┐
+    │   🌱 NÍVEL: COMEÇANDO AGORA    │
+    │                                │
+    │   Muito potencial de crescer!  │
+    │   Score: [XX]/100              │
+    └────────────────────────────────┘
+    
+    🎟️ SEUS NÚMEROS DA SORTE:
+    #WEB-[timestamp]-01
+    #WEB-[timestamp]-02
+    #WEB-[timestamp]-03
+    
+    Sorteio hoje às 21h45 no Instagram @smn.tec!
+    
+    ↓
+    
+    ESCANEIE O QR ABAIXO PARA RECEBER
+    SEU BRINDE DIGITAL PERSONALIZADO
+    
+    [QR CODE DINÂMICO - 8x8cm]
+    (leva para Google Drive com PDF/template correto)
+    
+    ↓
+    
+TELA 11: "Obrigado! Agora visite nossas outras estações"
+    [Ícones das 3 marcas]
+    
+    → Auto-reset em 15 segundos
+    (barra de progresso visual)
+        </div>
+
+        <div class="alert alert-success">
+            <strong>📝 NOTA TÉCNICA:</strong> O código HTML/CSS/JS completo do web app será fornecido em artefato separado após aprovação deste documento.
+        </div>
+
+        <h2>📍 ESTAÇÕES DO STAND (Detalhamento Completo)</h2>
+
+        <h3>ESTAÇÃO 1: IFTI - "Trilha de Desenvolvimento"</h3>
+        <div class="card">
+            <h4>Estrutura Física</h4>
+            <ul style="margin-left: 20px;">
+                <li>TV 43" em suporte (vertical ou horizontal)</li>
+                <li>Tablet Samsung Galaxy Tab fixo em suporte</li>
+                <li>Totem de sinalização A1 (detalhado abaixo)</li>
+                <li>Mesa alta com banquetas (2 lugares)</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Conteúdo da TV</h4>
+            <p><strong>Vídeo looping (90 segundos):</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Motion design mostrando salários médios TI no Brasil</li>
+                <li>Comparativos: Dev Jr (R$ 4k) → Pleno (R$ 8k) → Senior (R$ 15k+)</li>
+                <li>Outras carreiras: Designer UX, Analista Dados, Product Manager</li>
+                <li>Call to action: "Comece sua jornada no IFTI"</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Formulário no Tablet</h4>
+            <p><strong>URL aberta em fullscreen:</strong> <code>ifti.org.br/cadastro</code></p>
+            <p><strong>Campos do formulário:</strong></p>
+            <ol style="margin-left: 20px;">
+                <li>Nome completo</li>
+                <li>WhatsApp</li>
+                <li>E-mail</li>
+                <li>Área de atuação atual (dropdown)</li>
+                <li>Por que quer migrar pra TI? (textarea)</li>
+                <li>Disponibilidade de horário (checkbox múltiplo: manhã/tarde/noite)</li>
+            </ol>
+            
+            <h4 style="margin-top: 20px;">Pós-Cadastro</h4>
+            <p>Mensagem de sucesso na tela do tablet:</p>
+            <div style="background: #d1e7dd; padding: 15px; border-radius: 4px; margin: 10px 0;">
+                <strong>✅ Cadastro realizado com sucesso!</strong><br><br>
+                Você ganhou +2 números da sorte de hoje:<br>
+                #IFTI-[timestamp]-01<br>
+                #IFTI-[timestamp]-02<br><br>
+                Entraremos em contato em até 3 dias úteis para agendar uma entrevista.<br><br>
+                Enquanto isso, baixe o e-book "Carreiras em TI 2025":<br>
+                [QR Code para download]
+            </div>
+        </div>
+
+        <h3>ESTAÇÃO 2: GCPro - "Calculadora de Perdas"</h3>
+        <div class="card">
+            <h4>Estrutura Física</h4>
+            <ul style="margin-left: 20px;">
+                <li>TV 32" vertical em suporte</li>
+                <li>Totem de sinalização A1 com QR Code grande</li>
+                <li>Sem tablet físico (tudo pelo celular do visitante)</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Conteúdo da TV</h4>
+            <p><strong>Vídeo looping "Antes x Depois" (90 segundos):</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Personagem estilo motion (Kurzgesagt) afogado em papéis</li>
+                <li>Transição: descobre o GCPro</li>
+                <li>Agora: serenidade, tudo no celular, dados em tempo real</li>
+                <li>Texto final: "Sua empresa toda na palma da mão"</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Interação via QR Code</h4>
+            <p><strong>QR leva para:</strong> <code>gcpro.com.br/diagnostico</code></p>
+            
+            <p><strong>Página de destino (landing page):</strong></p>
+            <div style="border: 2px solid #0066cc; padding: 20px; background: #f8f9fa; margin: 15px 0;">
+                <strong style="font-size: 1.3em;">Descubra quanto você PERDE sem um ERP</strong>
+                
+                <p style="margin: 20px 0;"><strong>CALCULADORA INTERATIVA:</strong></p>
+                
+                <div style="background: white; padding: 15px; border-radius: 4px; margin: 10px 0;">
+                    <label>Quantos funcionários sua empresa tem?</label><br>
+                    [Slider: 1 a 500+]
+                </div>
+                
+                <div style="background: white; padding: 15px; border-radius: 4px; margin: 10px 0;">
+                    <label>Horas/mês gastas em tarefas manuais:</label><br>
+                    [Slider: 10 a 400h]
+                </div>
+                
+                <div style="background: white; padding: 15px; border-radius: 4px; margin: 10px 0;">
+                    <label>Custo médio/hora dos colaboradores:</label><br>
+                    [Input: R$]
+                </div>
+                
+                <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+                    <strong style="font-size: 1.5em;">VOCÊ PERDE:</strong><br>
+                    <span style="font-size: 2.5em; color: #dc3545;">R$ XX.XXX/mês</span><br>
+                    <span style="font-size: 1.2em;">R$ XXX.XXX/ano</span>
+                </div>
+                
+                <p style="margin: 20px 0;"><strong>Quer resolver isso?</strong></p>
+                
+                <form>
+                    <input type="text" placeholder="Nome completo">
+                    <input type="text" placeholder="Empresa">
+                    <input type="tel" placeholder="WhatsApp">
+                    <input type="email" placeholder="E-mail">
+                    <label>
+                        <input type="checkbox"> Quero diagnóstico completo gratuito
+                    </label>
+                    <button>AGENDAR DIAGNÓSTICO</button>
+                </form>
+            </div>
+            
+            <p><strong>Pós-envio:</strong> E-mail automático + 2 números da sorte (#GCPRO-timestamp)</p>
+        </div>
+
+        <h3>ESTAÇÃO 3: SMN - "Lounge + Agendamento VIP"</h3>
+        <div class="card">
+            <h4>Estrutura Física</h4>
+            <ul style="margin-left: 20px;">
+                <li>Sofá ou poltronas confortáveis (2-3 lugares)</li>
+                <li>Mesa de centro</li>
+                <li>Tablet fixo na mesa (Calendly sempre aberto)</li>
+                <li>Atendimento presencial Ricardo/Wagner (períodos estratégicos)</li>
+                <li>Backdrop atrás (fundo do stand - bom para fotos)</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Propósito</h4>
+            <p>Esta é a estação <strong>"high-touch"</strong> do stand:</p>
+            <ul style="margin-left: 20px;">
+                <li>Conversas mais profundas com decisores</li>
+                <li>Networking estratégico</li>
+                <li>Agendamentos de reuniões comerciais</li>
+                <li>Oportunidade de foto com líderes da SMN</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Tablet com Calendly</h4>
+            <p><strong>URL aberta permanentemente:</strong> <code>smn.tec/agendar</code></p>
+            
+            <p><strong>Calendly customizado:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li><strong>Evento:</strong> "Consultoria Estratégica SMN - 45 minutos"</li>
+                <li><strong>Perguntas no form:</strong>
+                    <ul style="margin-left: 20px;">
+                        <li>Nome</li>
+                        <li>Empresa</li>
+                        <li>WhatsApp</li>
+                        <li>E-mail</li>
+                        <li>Principal desafio da sua empresa (textarea)</li>
+                        <li>Faturamento anual (opcional, dropdown)</li>
+                    </ul>
+                </li>
+                <li><strong>Horários disponíveis:</strong> A partir de 20/11 (pós-evento)</li>
+            </ul>
+            
+            <p><strong>Incentivo:</strong> Quem agenda ganha +2 números sorte (#MEET-timestamp) + Badge "Priority Contact"</p>
+            
+            <h4 style="margin-top: 20px;">Atendimento Presencial</h4>
+            <p><strong>Script para Ricardo/Wagner quando circulando:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>Identificar C-level visualmente (linguagem corporal, idade, forma de se portar)</li>
+                <li>Abordar após pessoa interagir com alguma estação</li>
+                <li>Início: <em>"E aí, o que achou? Qual resultado você tirou no teste?"</em></li>
+                <li>Puxar conversa sobre desafios da empresa</li>
+                <li>Se fit comercial: <em>"Deixa eu te mostrar um case parecido..."</em></li>
+                <li>Fechar: <em>"Que tal agendar 30 minutos na próxima semana pra gente aprofundar isso?"</em></li>
+                <li>Usar tablet na hora ou pegar contato para equipe agendar depois</li>
+            </ul>
+        </div>
+
+        <h2>🖨️ TODOS OS IMPRESSOS (Checklist Completo)</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Qtd</th>
+                    <th>Tamanho</th>
+                    <th>Material</th>
+                    <th>Função</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Cards Promotoras</strong></td>
+                    <td>500</td>
+                    <td>9x5cm</td>
+                    <td>Supremo 300g + Verniz UV</td>
+                    <td>Distribuição ativa entrada → IG quiz</td>
+                </tr>
+                <tr>
+                    <td><strong>QR Gigante Chão</strong></td>
+                    <td>1</td>
+                    <td>80x80cm</td>
+                    <td>Vinil antiderrapante</td>
+                    <td>Ímã visual, foto, curiosidade → IG quiz</td>
+                </tr>
+                <tr>
+                    <td><strong>Totem A - Entrada Stand</strong></td>
+                    <td>1</td>
+                    <td>60x84cm (A1)</td>
+                    <td>Lona 440g + cavalete</td>
+                    <td>Boas-vindas + overview ações do stand</td>
+                </tr>
+                <tr>
+                    <td><strong>Totem B - IFTI</strong></td>
+                    <td>1</td>
+                    <td>60x84cm (A1)</td>
+                    <td>Lona 440g + cavalete</td>
+                    <td>Sinalização estação + CTA cadastro</td>
+                </tr>
+                <tr>
+                    <td><strong>Totem C - GCPro</strong></td>
+                    <td>1</td>
+                    <td>60x84cm (A1)</td>
+                    <td>Lona 440g + cavalete</td>
+                    <td>Sinalização estação + QR calculadora</td>
+                </tr>
+                <tr>
+                    <td><strong>Backdrop</strong></td>
+                    <td>1</td>
+                    <td>4x2,5m</td>
+                    <td>Lona tensionada</td>
+                    <td>Identidade visual, fundo fotos</td>
+                </tr>
+                <tr>
+                    <td><strong>Adesivo Balcão</strong></td>
+                    <td>1</td>
+                    <td>Sob medida</td>
+                    <td>Vinil removível</td>
+                    <td>Frente da mesa → QR agendamento</td>
+                </tr>
+                <tr>
+                    <td><strong>Adesivo Totems Touch</strong></td>
+                    <td>2</td>
+                    <td>50x30cm</td>
+                    <td>Vinil recortado</td>
+                    <td>Sinalização "Toque aqui" acima da tela</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="alert">
+            <strong>📦 ENTREGA GRÁFICA:</strong> Todos os itens devem estar prontos até <strong>11/11 às 12h</strong> (segunda-feira). Penalidade contratual por atraso.
+        </div>
+
+        <h2>🎰 SISTEMA DE SORTEIO (Mecânica Unificada)</h2>
+
+        <div class="card">
+            <h4>Como Ganhar Números da Sorte</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ação</th>
+                        <th>Números</th>
+                        <th>Prefixo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quiz Instagram completo</td>
+                        <td>3</td>
+                        <td>#IG-timestamp-XX</td>
+                    </tr>
+                    <tr>
+                        <td>Quiz Totem completo</td>
+                        <td>3</td>
+                        <td>#WEB-timestamp-XX</td>
+                    </tr>
+                    <tr>
+                        <td>Cadastro IFTI</td>
+                        <td>2</td>
+                        <td>#IFTI-timestamp-XX</td>
+                    </tr>
+                    <tr>
+                        <td>Calculadora GCPro</td>
+                        <td>2</td>
+                        <td>#GCPRO-timestamp-XX</td>
+                    </tr>
+                    <tr>
+                        <td>Agendamento SMN</td>
+                        <td>2</td>
+                        <td>#MEET-timestamp-XX</td>
+                    </tr>
+                    <tr style="background: #fff3cd; font-weight: bold;">
+                        <td>MÁXIMO POR PESSOA</td>
+                        <td>12</td>
+                        <td>(se fizer tudo)</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h4 style="margin-top: 25px;">Estrutura do Google Sheets</h4>
+            <p><strong>Planilha única:</strong> <code>SEBRAE_ProBusiness_2025_Leads</code></p>
+            
+            <p><strong>Abas:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li><strong>Instagram:</strong> Leads do Manychat</li>
+                <li><strong>Totem:</strong> Leads do web app</li>
+                <li><strong>IFTI:</strong> Cadastros da estação</li>
+                <li><strong>GCPro:</strong> Calculadora diagnóstico</li>
+                <li><strong>Agendamentos:</strong> Calendly SMN</li>
+                <li><strong>SORTEIO_MASTER:</strong> Consolidado unificado com todos os números</li>
+            </ul>
+            
+            <p><strong>Colunas da aba SORTEIO_MASTER:</strong></p>
+            <div class="flow-diagram">
+| Timestamp | Nome | Empresa | WhatsApp | Origem | Tickets | Total_Tickets |
+|-----------|------|---------|----------|--------|---------|---------------|
+            </div>
+            
+            <p><strong>Coluna "Tickets":</strong> Texto com todos os números separados por vírgula<br>
+            Exemplo: <code>#IG-120320301-01,#IG-120320301-02,#IG-120320301-03,#IFTI-120321045-01,#IFTI-120321045-02</code></p>
+            
+            <p><strong>Script Google Apps Script para consolidação automática:</strong> Roda a cada 5 minutos unificando as abas</p>
+        </div>
+
+        <h3>Sorteio ao Vivo (Instagram Stories)</h3>
+        <div class="card">
+            <h4>Horário: 21h45 (cada dia)</h4>
+            
+            <p><strong>Roteiro do sorteio:</strong></p>
+            
+            <div style="background: #f8f9fa; padding: 15px; margin: 15px 0; border-left: 4px solid #0066cc;">
+                <strong>STORY 1 - 21h40 (5 min antes)</strong><br>
+                "ATENÇÃO! Em 5 minutos vamos sortear a ALEXA do dia! 🎉<br>
+                Se você participou de qualquer atividade no stand hoje, tá concorrendo!<br>
+                Fica ligado!"
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 15px; margin: 15px 0; border-left: 4px solid #0066cc;">
+                <strong>STORY 2 - 21h45 (sorteio)</strong><br>
+                "HORA DO SORTEIO! 🔥<br><br>
+                Hoje temos [X] pessoas concorrendo com [Y] números da sorte.<br><br>
+                Vou abrir a planilha aqui... [compartilhar tela por 3 segundos]<br><br>
+                E o número sorteado é..."
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 15px; margin: 15px 0; border-left: 4px solid #ffc107;">
+                <strong>COMO SORTEAR (no computador):</strong><br>
+                1. Abrir Google Sheets aba SORTEIO_MASTER<br>
+                2. Célula vazia qualquer: <code>=INDEX(F:F, RANDBETWEEN(2, COUNTA(F:F)))</code><br>
+                3. Dar ENTER → número sorteado aparece<br>
+                4. Buscar (Ctrl+F) o número na coluna "Tickets"<br>
+                5. Pegar nome e empresa da linha correspondente
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 15px; margin: 15px 0; border-left: 4px solid #28a745;">
+                <strong>STORY 3 - Anúncio do ganhador</strong><br>
+                "🎉 PARABÉNS [NOME DA PESSOA]!<br>
+                da empresa [EMPRESA]!<br><br>
+                O número sorteado foi: #XX-XXXXXX-XX<br><br>
+                Se você tá aqui no evento ainda, CORRE NO STAND AGORA!<br>
+                Se já foi embora, vamos te ligar no WhatsApp que tá cadastrado! 📞"
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 15px; margin: 15px 0; border-left: 4px solid #0066cc;">
+                <strong>STORY 4 - Entrega (se presente)</strong><br>
+                Foto/vídeo com ganhador segurando a Alexa no stand<br>
+                Marcar @ganhador (se tiver Instagram)<br>
+                "Mais um dia de transformação no SEBRAE! 🚀"
+            </div>
+            
+            <h4 style="margin-top: 25px;">Plano B: Ganhador Ausente</h4>
+            <ul style="margin-left: 20px;">
+                <li>Esperar 5 minutos no stand</li>
+                <li>Ligar no WhatsApp cadastrado (gravar ligação para transparência)</li>
+                <li>Se não atender: enviar WhatsApp + DM Instagram</li>
+                <li>Prazo retirada: até 22h (fim do evento)</li>
+                <li>Se não retirar: sortear novamente no próximo dia antes do evento (17h50)</li>
+            </ul>
+        </div>
+
+        <h2>💰 ORÇAMENTO DETALHADO</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Qtd</th>
+                    <th>Valor Unit.</th>
+                    <th>Total</th>
+                    <th>Fornecedor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Kit Impressos Gráfica</strong><br>
+                        <small>(cards, QR chão, totens, backdrop, adesivos)</small>
+                    </td>
+                    <td>1</td>
+                    <td>R$ 1.200</td>
+                    <td>R$ 1.200</td>
+                    <td>Gráfica Líder JP</td>
+                </tr>
+                <tr>
+                    <td><strong>Letreiro LED SMN</strong><br>
+                        <small>(chão, frontal, retroiluminado)</small>
+                    </td>
+                    <td>1</td>
+                    <td>R$ 1.800</td>
+                    <td>R$ 1.800</td>
+                    <td>A definir</td>
+                </tr>
+                <tr>
+                    <td><strong>Totens Touchscreen</strong><br>
+                        <small>(aluguel 2 dias, Windows, 32")</small>
+                    </td>
+                    <td>2</td>
+                    <td>R$ 400</td>
+                    <td>R$ 800</td>
+                    <td>A definir</td>
+                </tr>
+                <tr>
+                    <td><strong>Móveis Stand</strong><br>
+                        <small>(sofá, mesas, banquetas)</small>
+                    </td>
+                    <td>Kit</td>
+                    <td>R$ 600</td>
+                    <td>R$ 600</td>
+                    <td>Locação local</td>
+                </tr>
+                <tr>
+                    <td><strong>TVs + Suportes</strong><br>
+                        <small>(3 TVs: 43", 32", 32")</small>
+                    </td>
+                    <td>3</td>
+                    <td>R$ 200</td>
+                    <td>R$ 600</td>
+                    <td>Locação local</td>
+                </tr>
+                <tr>
+                    <td><strong>Tablets + Suportes</strong><br>
+                        <small>(2 para estações)</small>
+                    </td>
+                    <td>2</td>
+                    <td>R$ 150</td>
+                    <td>R$ 300</td>
+                    <td>Locação ou uso próprio</td>
+                </tr>
+                <tr>
+                    <td><strong>Brindes Físicos</strong><br>
+                        <small>(300 ecobags personalizadas)</small>
+                    </td>
+                    <td>300</td>
+                    <td>R$ 6</td>
+                    <td>R$ 1.800</td>
+                    <td>Brindes Paraíba</td>
+                </tr>
+                <tr>
+                    <td><strong>Alexa Echo Show</strong></td>
+                    <td>2</td>
+                    <td>R$ 650</td>
+                    <td>R$ 1.300</td>
+                    <td>Amazon/Magazine Luiza</td>
+                </tr>
+                <tr>
+                    <td><strong>Internet Dedicada</strong><br>
+                        <small>(link 2 dias, 50mb)</small>
+                    </td>
+                    <td>1</td>
+                    <td>R$ 450</td>
+                    <td>R$ 450</td>
+                    <td>A confirmar</td>
+                </tr>
+                <tr>
+                    <td><strong>Iluminação LED</strong><br>
+                        <small>(fitas RGB backdrop)</small>
+                    </td>
+                    <td>10m</td>
+                    <td>R$ 15</td>
+                    <td>R$ 150</td>
+                    <td>Loja local</td>
+                </tr>
+                <tr>
+                    <td><strong>Contingências</strong><br>
+                        <small>(15% buffer imprevistos)</small>
+                    </td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>R$ 1.350</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="budget-total">
+            INVESTIMENTO TOTAL: R$ 10.350,00
+        </div>
+
+        <div class="alert">
+            <strong>💡 OTIMIZAÇÃO POSSÍVEL:</strong> Se usar equipamentos próprios (TVs, tablets) ao invés de alugar, economia de ~R$ 900. <strong>Total otimizado: R$ 9.450</strong>
+        </div>
+
+        <h2>⏱️ TIMELINE EXECUTIVA</h2>
+
+        <div class="timeline">
+            <div class="timeline-item urgent">
+                <strong>🔴 HOJE 03/11 - DECISÃO CRÍTICA</strong><br>
+                <strong>20h:</strong> Reunião Go/No-Go (Wagner + Ricardo + Financeiro)<br>
+                <strong>21h:</strong> Se GO → Ligar fornecedores (gráfica, estrutura, brindes, internet)<br>
+                <strong>22h:</strong> Fechar contratos com multa por atraso<br>
+                <strong>23h:</strong> Briefing final equipe via WhatsApp
+            </div>
+            
+            <div class="timeline-item">
+                <strong>🟡 04/11 (Terça) - SPRINT TÉCNICO</strong><br>
+                <strong>09h-12h:</strong> Wagner → Criar fluxo Manychat completo + testar<br>
+                <strong>14h-17h:</strong> Wagner → Desenvolver web app quiz.smn.tec<br>
+                <strong>17h-18h:</strong> Wagner → Deploy Vercel + testar online<br>
+                <strong>18h-21h:</strong> Wagner → Criar artes para gráfica (todas)<br>
+                <strong>23h:</strong> Enviar arquivos para gráfica (deadline fatal)
+            </div>
+            
+            <div class="timeline-item">
+                <strong>🟡 05/11 (Quarta) - SPRINT CONTEÚDO</strong><br>
+                <strong>09h-12h:</strong> Designer → Vídeo GCPro "Antes x Depois" (motion)<br>
+                <strong>12h-14h:</strong> Wagner → Produzir 3 brindes digitais (e-book, template, prompts)<br>
+                <strong>14h-17h:</strong> Designer → Posts Instagram e LinkedIn (4 posts)<br>
+                <strong>17h-18h:</strong> Wagner → Configurar Zapier/Make (Sheets integração)<br>
+                <strong>18h-20h:</strong> Wagner → Testar TUDO fim-a-fim<br>
+                <strong>20h:</strong> Backup completo em pen drive (2 cópias)
+            </div>
+            
+            <div class="timeline-item">
+                <strong>🟢 06-09/11 (Qui-Dom) - VIAGEM</strong><br>
+                Wagner e Ricardo viajam<br>
+                <small>Equipe local: confirmar entrega gráfica agendada para 11/11</small>
+            </div>
+            
+            <div class="timeline-item">
+                <strong>🟢 10/11 (Domingo) - RETORNO</strong><br>
+                <strong>19h:</strong> Wagner retorna<br>
+                <strong>20h:</strong> Checklist geral remoto (tudo ok?)<br>
+                <strong>21h:</strong> Postar Story teaser "Amanhã tem!"
+            </div>
+            
+            <div class="timeline-item">
+                <strong>🟢 11/11 (Segunda) - DIA DO SETUP</strong><br>
+                <strong>10h:</strong> Confirmar gráfica entregou todos impressos<br>
+                <strong>12h:</strong> Conferir materiais (checklist físico)<br>
+                <strong>14h:</strong> Ir ao local, testar internet (CRÍTICO)<br>
+                <strong>15h:</strong> Testar totems online (acessar quiz.smn.tec)<br>
+                <strong>16h:</strong> Testar Manychat (enviar mensagem teste)<br>
+                <strong>17h:</strong> Treino rápido equipe (1h - script + FAQ)<br>
+                <strong>18h:</strong> Montagem estrutura física do stand<br>
+                <strong>20h:</strong> Teste geral integrado (simular jornada completa)<br>
+                <strong>21h:</strong> Ajustes finais + descanso
+            </div>
+            
+            <div class="timeline-item done">
+                <strong>🎪 12/11 (Quarta) - DIA 1 EVENTO</strong><br>
+                <strong>17h:</strong> Equipe chega, últimos ajustes<br>
+                <strong>17h30:</strong> Briefing rápido 15min<br>
+                <strong>18h:</strong> ABERTURA - Promotoras ativas na entrada<br>
+                <strong>20h:</strong> Avaliar fluxo, ajustar se necessário<br>
+                <strong>21h30:</strong> Preparar sorteio (abrir planilha)<br>
+                <strong>21h45:</strong> SORTEIO AO VIVO Instagram<br>
+                <strong>22h:</strong> Encerramento + organização para dia 2
+            </div>
+            
+            <div class="timeline-item done">
+                <strong>🎪 13/11 (Quinta) - DIA 2 EVENTO</strong><br>
+                <strong>17h:</strong> Equipe chega, reposição materiais se necessário<br>
+                <strong>17h30:</strong> Alinhamento rápido baseado em dia 1<br>
+                <strong>18h:</strong> ABERTURA<br>
+                <strong>21h45:</strong> SORTEIO FINAL<br>
+                <strong>22h:</strong> Encerramento<br>
+                <strong>22h-23h:</strong> Desmontagem e recolhimento equipamentos
+            </div>
+        </div>
+
+        <h2>✅ CRITÉRIOS DE DECISÃO GO / NO-GO</h2>
+
+        <div class="card">
+            <h4>Checklist de Viabilidade (HOJE até 20h)</h4>
+            
+            <ul class="checklist">
+                <li><strong>Orçamento R$ 9-10k aprovado?</strong> (sem aprovação = NO-GO imediato)</li>
+                <li><strong>Gráfica aceita prazo de entrega 11/11 às 12h?</strong> (com multa contratual por atraso)</li>
+                <li><strong>Fornecedor de estrutura garante montagem até 11/11 20h?</strong></li>
+                <li><strong>Wagner confirma viabilidade técnica em 2 dias?</strong> (Manychat + Web App)</li>
+                <li><strong>Internet dedicada confirmada para o local?</strong> (backup: 4G ilimitado)</li>
+                <li><strong>Mínimo 4 pessoas da equipe confirmadas para 12-13/11?</strong></li>
+                <li><strong>Ricardo disponível 100% nos 2 dias de evento?</strong></li>
+            </ul>
+            
+            <div style="margin-top: 30px; padding: 20px; background: #d1e7dd; border-radius: 8px;">
+                <strong style="font-size: 1.2em;">✅ SE TODOS OS ITENS = SIM</strong><br>
+                → GO! Ligar fornecedores IMEDIATAMENTE<br>
+                → Iniciar produção amanhã cedo (04/11)
+            </div>
+            
+            <div style="margin-top: 15px; padding: 20px; background: #f8d7da; border-radius: 8px;">
+                <strong style="font-size: 1.2em;">❌ SE 1 OU MAIS = NÃO</strong><br>
+                → NO-GO. Melhor não fazer com qualidade comprometida<br>
+                → Alternativa: presença institucional simples (sem dinâmicas)
+            </div>
+        </div>
+
+        <h2>🚨 RISCOS E MITIGAÇÕES</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Risco</th>
+                    <th>Probabilidade</th>
+                    <th>Impacto</th>
+                    <th>Mitigação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Internet cair durante evento</td>
+                    <td>Média</td>
+                    <td>ALTO</td>
+                    <td>
+                        • Link dedicado contratado<br>
+                        • Backup 4G com roteador móvel<br>
+                        • Totems salvam offline e sincronizam depois<br>
+                        • Sorteio pode ser manual (urna física backup)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gráfica atrasar entrega</td>
+                    <td>Baixa</td>
+                    <td>ALTO</td>
+                    <td>
+                        • Contrato com multa por atraso<br>
+                        • Encomendar HOJE (03/11) com +8 dias corridos<br>
+                        • Gráfica alternativa em standby
+                    </td>
+                </tr>
+                <tr>
+                    <td>Manychat travar/bugs</td>
+                    <td>Baixa</td>
+                    <td>MÉDIO</td>
+                    <td>
+                        • Teste completo dia 11/11<br>
+                        • Fluxo simples (menos pontos de falha)<br>
+                        • Instagram nativo sempre funciona (DM manual se necessário)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Baixa adesão às dinâmicas</td>
+                    <td>Média</td>
+                    <td>MÉDIO</td>
+                    <td>
+                        • Promotoras ativas e treinadas<br>
+                        • Cards físicos (não depende de QR apenas)<br>
+                        • Sorteio Alexa = incentivo forte<br>
+                        • Stand bem localizado (entrada = alto tráfego)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Conflito de números da sorte</td>
+                    <td>Baixa</td>
+                    <td>BAIXO</td>
+                    <td>
+                        • Sistema de prefixos (#IG, #WEB, etc)<br>
+                        • Timestamps únicos por registro<br>
+                        • Planilha unificada em tempo real
+                    </td>
+                </tr>
+                <tr>
+                    <td>Equipe despreparada</td>
+                    <td>Baixa</td>
+                    <td>MÉDIO</td>
+                    <td>
+                        • Treino obrigatório 11/11 17h<br>
+                        • Script simples de 1 página<br>
+                        • FAQ impressa para consulta rápida<br>
+                        • Wagner/Ricardo disponíveis para dúvidas
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wagner não conseguir entregar em 2 dias</td>
+                    <td>Baixa</td>
+                    <td>CRÍTICO</td>
+                    <td>
+                        • Stack simples (HTML/CSS/JS puro)<br>
+                        • Templates prontos (Manychat, Vercel)<br>
+                        • Backup: designer pode assumir artes<br>
+                        • Se inviável: Wagner avisa HOJE na reunião
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>📊 MÉTRICAS DE SUCESSO</h2>
+
+        <div class="card">
+            <h4>Obrigatórias (Mínimo para considerar "sucesso")</h4>
+            <ul class="checklist">
+                <li>200+ leads capturados (nome + contato válido)</li>
+                <li>30+ posts no Instagram marcando @smn.tec</li>
+                <li>10+ fotos/vídeos de pessoas no stand circulando nas redes</li>
+                <li>5+ agendamentos de reunião pós-evento</li>
+                <li>0 problemas técnicos críticos (internet, totens, sorteio)</li>
+            </ul>
+            
+            <h4 style="margin-top: 25px;">Bônus (Excelência)</h4>
+            <ul class="checklist">
+                <li>Menção de influencer ou palestrante do evento</li>
+                <li>Reportagem em mídia local (jornal, portal, TV)</li>
+                <li>Stand comentado como "mais inovador" por visitantes</li>
+                <li>10+ empresas grandes (C-level) interagindo no stand</li>
+                <li>Taxa de conversão quiz→lead > 80%</li>
+            </ul>
+        </div>
+
+        <h2>📞 CONTATOS DE EMERGÊNCIA</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Fornecedor</th>
+                    <th>Serviço</th>
+                    <th>Contato</th>
+                    <th>Prazo Crítico</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Gráfica Líder</strong></td>
+                    <td>Impressos</td>
+                    <td>(83) 3021-8300</td>
+                    <td>Entrega 11/11 12h</td>
+                </tr>
+                <tr>
+                    <td><strong>Brindes Paraíba</strong></td>
+                    <td>Ecobags</td>
+                    <td>A definir</td>
+                    <td>Entrega 11/11</td>
+                </tr>
+                <tr>
+                    <td><strong>Estrutura/Totens</strong></td>
+                    <td>Aluguel equipamentos</td>
+                    <td>A definir</td>
+                    <td>Montagem 11/11 20h</td>
+                </tr>
+                <tr>
+                    <td><strong>Internet</strong></td>
+                    <td>Link dedicado</td>
+                    <td>A definir</td>
+                    <td>Instalado 11/11 14h</td>
+                </tr>
+                <tr>
+                    <td><strong>Teatro Pedra do Reino</strong></td>
+                    <td>Local evento</td>
+                    <td>A confirmar</td>
+                    <td>Acesso 11/11 18h</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="alert">
+            <strong>⚠️ RESPONSABILIDADE:</strong> Uma pessoa da equipe precisa ser designada como "ponto focal operacional" para centralizar comunicação com fornecedores nos dias 04-11/11 enquanto Wagner/Ricardo viajam.
+        </div>
+
+        <h2>✅ PRÓXIMOS 30 MINUTOS</h2>
+
+        <div class="card" style="background: linear-gradient(135deg, #0066cc 0%, #004999 100%); color: white;">
+            <h3 style="color: white; border: none;">AÇÕES IMEDIATAS</h3>
+            
+            <ol style="font-size: 1.1em; line-height: 2;">
+                <li><strong>Ler este documento completo</strong> (15 min)</li>
+                <li><strong>Reunir:</strong> Wagner + Ricardo + Decisor Financeiro (10 min)</li>
+                <li><strong>Decidir:</strong> Vai ou não vai? (5 min)
+                    <ul>
+                        <li>Aprovar orçamento R$ 9-10k?</li>
+                        <li>Wagner consegue entregar técnico em 2 dias?</li>
+                        <li>Equipe disponível?</li>
+                    </ul>
+                </li>
+            </ol>
+            
+            <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 8px; margin-top: 20px;">
+                <strong style="font-size: 1.3em;">SE GO:</strong><br>
+                <strong>Ligar fornecedores AGORA</strong> (gráfica, estrutura, internet, brindes)<br>
+                <strong>Iniciar produção AMANHÃ 09h</strong> (Wagner sprint técnico)
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 8px; margin-top: 15px;">
+                <strong style="font-size: 1.3em;">SE NO-GO:</strong><br>
+                Aceitar e planejar presença institucional simples<br>
+                (sem dinâmicas, só branding e networking natural)
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; padding-top: 30px; border-top: 3px solid #0066cc; text-align: center; color: #666;">
+            <p><strong>Documento preparado por Wagner Lima</strong></p>
+            <p>Data: 03/11/2025 | Versão Final</p>
+            <p style="margin-top: 20px;">
+                <em>"Excelência é fazer bem feito mesmo quando ninguém está vendo."</em>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
