@@ -37,10 +37,17 @@ jobs:
       - name: Build with Next.js
         run: pnpm build
       
+      - name: Add .nojekyll file
+        run: touch out/.nojekyll
+      
+      - name: Debug - List output directory
+        run: ls -la out/
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+          if-no-files-found: warn
 
   deploy:
     environment:
