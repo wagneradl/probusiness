@@ -36,6 +36,32 @@ Abra [http://localhost:3000/probusiness](http://localhost:3000/probusiness) no n
 pnpm build
 ```
 
+## 🌐 Deploy no GitHub Pages
+
+### Deploy Automático (Recomendado)
+
+Este projeto está configurado com GitHub Actions para deploy automático a cada push na branch `main`.
+
+**Passos para ativar:**
+
+1. Acesse as configurações do repositório: https://github.com/wagneradl/probusiness/settings/pages
+2. Em **"Source"**, selecione: **GitHub Actions**
+3. Clique em **Save**
+
+O site ficará disponível em: **https://wagneradl.github.io/probusiness**
+
+### Deploy Manual (Local)
+
+Se preferir fazer deploy manual:
+
+```bash
+# 1. Build do projeto
+pnpm build
+
+# 2. O diretório `out/` contém o site estático
+# 3. Faça upload desse diretório para qualquer servidor web
+```
+
 ## 🎨 Componentes
 
 - PageHeader, SectionTitle
