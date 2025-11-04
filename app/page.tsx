@@ -129,7 +129,7 @@ PÓS-EVENTO (14/11+)
         </FlowDiagram>
 
         {/* PRÉ-EVENTO INSTAGRAM */}
-        <SectionTitle>📱 CANAL A: INSTAGRAM - "QUAL SEU ARQUÉTIPO DE INOVADOR?"</SectionTitle>
+        <SectionTitle>📱 CANAL A: INSTAGRAM - &quot;QUAL SEU ARQUÉTIPO DE INOVADOR?&quot;</SectionTitle>
 
         <SectionTitle level={3}>Pré-Evento (09-11/11)</SectionTitle>
         <Card>
@@ -267,7 +267,7 @@ Prazo entrega: 11/11 até 12h`}
         </Alert>
 
         {/* TOTEM FÍSICO */}
-        <SectionTitle>🖥️ CANAL B: TOTEM FÍSICO - "TERMÔMETRO DIGITAL"</SectionTitle>
+        <SectionTitle>🖥️ CANAL B: TOTEM FÍSICO - &quot;TERMÔMETRO DIGITAL&quot;</SectionTitle>
 
         <SectionTitle level={3}>Estrutura Física</SectionTitle>
         <Card>
