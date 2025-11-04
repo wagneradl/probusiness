@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Next.js to GitHub Pages
 
 on:
   push:
@@ -21,33 +21,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: 'npm'
       
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
         with:
-          version: 8
+          static_site_generator: next
       
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci
       
       - name: Build with Next.js
-        run: pnpm build
-      
-      - name: Add .nojekyll file
-        run: touch out/.nojekyll
-      
-      - name: Debug - List output directory
-        run: ls -la out/
+        run: npm run build
+        env:
+          NODE_ENV: production
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-          if-no-files-found: warn
 
   deploy:
     environment:
